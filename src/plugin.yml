@@ -1,0 +1,13 @@
+name: KingCore
+version: 0.0.4
+author: king601
+
+main: com.king601.KingCore.KingCore
+
+commands:
+  sup:
+    description: Let a brother know what's up with it!
+    usage: /<command> {player}
+  kc2:
+    description: basic kingcore2 command /kc2
+    usage: /<command> {player}
