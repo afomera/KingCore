@@ -33,7 +33,8 @@ public class KingCoreListener implements Listener {
             //Bukkit.broadcastMessage(ChatColor.GREEN + "Rain Prevented");
         }
     }
-   /*
+
+    //This makes it so people who aren't ops cannot break blocks.
     @EventHandler
     public void blockBreak(BlockBreakEvent event) {
         Player player = event.getPlayer();
@@ -44,6 +45,7 @@ public class KingCoreListener implements Listener {
             player.sendMessage(ChatColor.WHITE + "You are not permitted to break blocks");
         }
     }
+    //This makes it so people who aren't op cannot place blocks
     @EventHandler
     public void blockPlace(BlockPlaceEvent event) {
         Player player = event.getPlayer();
@@ -54,6 +56,7 @@ public class KingCoreListener implements Listener {
         }
     }
 
+    //This welcomes players to the servers, if OP shows green else says Dark Purple.
     @EventHandler
     public void onJoin(PlayerJoinEvent event) {
         Player player = event.getPlayer();
@@ -64,8 +67,4 @@ public class KingCoreListener implements Listener {
            player.sendMessage(ChatColor.DARK_PURPLE + "Welcome back to the Server!");
         }
     }
-   */
-
-
-
 }
