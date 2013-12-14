@@ -1,8 +1,11 @@
 package com.king601.KingCore;
 
 
+import org.bukkit.Material;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.weather.WeatherChangeEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -67,4 +70,15 @@ public class KingCoreListener implements Listener {
            player.sendMessage(ChatColor.DARK_PURPLE + "Welcome back to the Server!");
         }
     }
+
+    @EventHandler
+    public void handleInteract(PlayerInteractEvent event) {
+        Player player = event.getPlayer();
+
+        if(player.getItemInHand().getType()== Material.STONE_HOE) {
+
+            player.sendMessage("Hey there");
+        }
+    }
+
 }
