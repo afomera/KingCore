@@ -6,7 +6,7 @@ KingCore is King601's bukkit plugin to help make the game interesting to him. Th
 Current Features include:
 
   - Server welcome message (currently hardcoded - eventually read from config/database)
-  -
+  - Easy Tree Chopping (checks if log is above the one you chop with an 'axe' and if so it cuts it down as well)
   -
 
 Version
